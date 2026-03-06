@@ -1,4 +1,5 @@
+flask
 tensorflow
 numpy
-matplotlib
-keras
+pillow
+gunicorn
