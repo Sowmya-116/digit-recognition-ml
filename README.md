@@ -4,6 +4,10 @@ This project is a Machine Learning web application that recognizes handwritten d
 
 Users can draw a digit on a canvas, and the AI model predicts the number instantly.
 
+## 📷 Demo
+
+![Digit Recognition Demo](assets/demo.gif)
+
 ## Features
 
 • Draw digits directly on the browser  
