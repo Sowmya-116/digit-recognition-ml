@@ -23,7 +23,7 @@ CSS
 JavaScript
 
 ## Project Structure
-
+```
 digit-recognition-ml
 │
 ├── static
@@ -39,7 +39,7 @@ digit-recognition-ml
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 ## How to Run
 
 1. Clone the repository
