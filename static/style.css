@@ -1,0 +1,102 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://miro.medium.com/0*_sK5IRJ9N6u7an2a.jpg');
+    background-repeat: no-repeat;
+    /* Prevent repeating */
+    background-size: cover;
+    /* Cover entire screen */
+    background-position: center;
+    /* Center the image */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    /* Elegant handwriting */
+    font-size: 3rem;
+    text-align: center;
+    color: #ff6f61;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.instructions {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 2px solid #333333;
+    border-radius: 10px;
+    background: white;
+    cursor: crosshair;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#result {
+    font-size: 24px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.result-box {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.result-box {
+    height: 70px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.digit {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.confidence {
+    font-size: 14px;
+    color: #7f8c8d;
+}
