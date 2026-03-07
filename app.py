@@ -3,11 +3,16 @@ import numpy as np
 import base64
 import io
 from PIL import Image
+import os
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
 
-model = load_model("digit_model.h5")
+# Load the model from the environment variable
+model_path = os.environ.get("MODEL_PATH")
+if not model_path:
+    raise ValueError("MODEL_PATH environment variable not set.")
+model = load_model(model_path)
 
 def preprocess_image(image):
     image = image.convert("L").resize((28, 28))
@@ -31,7 +36,6 @@ def predict():
     processed = preprocess_image(image)
 
     prediction = model.predict(processed)
-
     digit = int(np.argmax(prediction))
     confidence = float(np.max(prediction)) * 100
 
